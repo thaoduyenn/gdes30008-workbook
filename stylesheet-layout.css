@@ -46,3 +46,22 @@ h6 {
 }
 
 /* CODE START */
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex: 50%;
+  max-width: 50%;
+}
+
+/* FOR MOBILE SCREENS */
+
+@media (max-width: 600px) {
+  .flex-col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
