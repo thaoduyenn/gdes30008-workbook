@@ -54,7 +54,19 @@ h6 {
 
 .flex-col {
   flex: 50%;
-  max-width: 50%;
+  width: 50%;
+}
+
+/* RESEARCH JOURNAL */
+
+.rj-row {
+  display: flex;
+  flex: wrap;
+}
+
+.rj-left,
+.rj-right {
+  width: 50%;
 }
 
 /* FOR MOBILE SCREENS */
@@ -62,6 +74,10 @@ h6 {
 @media (max-width: 600px) {
   .flex-col {
     flex: 100%;
-    max-width: 100%;
+    width: 100%;
+  }
+
+  .rj-col {
+    width: 100%;
   }
 }
