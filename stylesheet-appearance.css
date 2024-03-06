@@ -1,0 +1,40 @@
+:root {
+  --body-size: 1.25em;
+  --h1-size: 2.5em;
+  --h2-size: 2em;
+  --rj-left-bg: #000000;
+  --rj-left-text-color: #ffffff;
+}
+
+body,
+p,
+span,
+a,
+li {
+  font-size: var(--body-size);
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+.no-list-style {
+  list-style-type: none;
+}
+
+img {
+  max-height: 600px;
+}
+/* RESEARCH JOURNAL */
+.rj-left {
+  background-color: var(--rj-left-bg);
+  color: var(--rj-left-text-color);
+}
+
+.rj-right {
+  text-align: right;
+}
