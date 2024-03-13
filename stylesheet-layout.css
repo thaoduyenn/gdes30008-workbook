@@ -57,6 +57,29 @@ h6 {
   width: 50%;
 }
 
+/* MAIN PAGE */
+#wb-header-left {
+  flex: 70%;
+  width: 70%;
+}
+
+#wb-header-right {
+  flex: 30%;
+  width: 30%;
+}
+
+#cockpit {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#rj-link {
+  position: absolute;
+  right: 0;
+}
+
 /* RESEARCH JOURNAL */
 
 .rj-row {
@@ -71,8 +94,10 @@ h6 {
 
 /* FOR MOBILE SCREENS */
 
-@media (max-width: 600px) {
-  .flex-col {
+@media (max-width: 768px) {
+  .flex-col,
+  #wb-header-left,
+  #wb-header-right {
     flex: 100%;
     width: 100%;
   }
