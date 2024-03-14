@@ -5,10 +5,12 @@
   --rj-left-bg: #ffffff;
   --rj-left-text-color: #000000;
   --body-color: #2dff19;
+  --body-hover: #ffffff;
   cursor: url("assets/cursor.cur"), auto;
 }
 
 body {
+  background-color: #000000;
   background-image: url(assets/bg.jpg);
   color: var(--body-color);
   font-family: "Martian Mono", "Courier", monospace;
@@ -38,9 +40,26 @@ img {
   max-height: 600px;
 }
 
+a {
+  color: var(--body-color);
+  text-decoration: none;
+  border: 5px solid #2dff19;
+}
+
+a:hover {
+  color: var(--body-hover);
+  transition: 0.3s;
+  cursor: url("assets/cursor.cur"), auto;
+}
+
 /*LANDING PAGE */
+
+#rj-link {
+  font-size: var(--h2-size);
+}
+
 #cockpit {
-  max-width: max-content;
+  width: 60vw;
 }
 
 .star {
@@ -62,5 +81,11 @@ img {
 @media (max-width: 860px) {
   h1 {
     font-size: var(--h2-size);
+  }
+}
+
+@media (max-width: 600px) {
+  #cockpit {
+    width: 100vw;
   }
 }
