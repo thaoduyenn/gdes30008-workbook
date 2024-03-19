@@ -4,7 +4,8 @@
   --h2-size: 1.75em;
   --rj-left-bg: #ffffff;
   --rj-left-text-color: #000000;
-  --body-color: #2dff19;
+  --header-color: #2dff19;
+  --body-color: rgb(255, 255, 255);
   --body-hover: #ffffff;
   cursor: url("assets/cursor.cur"), auto;
 }
@@ -12,7 +13,6 @@
 body {
   background-color: #000000;
   background-image: url(assets/bg.jpg);
-  color: var(--body-color);
   font-family: "Martian Mono", "Courier", monospace;
 }
 
@@ -24,12 +24,20 @@ li {
   font-size: var(--body-size);
 }
 
+p {
+  color: var(--body-color);
+  padding: 5px;
+}
 h1 {
   font-size: var(--h1-size);
+  color: var(--header-color);
+  padding: 5px;
 }
 
 h2 {
   font-size: var(--h2-size);
+  color: var(--header-color);
+  padding: 5px;
 }
 
 .no-list-style {
@@ -41,7 +49,7 @@ img {
 }
 
 a {
-  color: var(--body-color);
+  color: var(--header-color);
   text-decoration: none;
   border: 5px solid #2dff19;
 }
@@ -50,22 +58,48 @@ a:hover {
   color: var(--body-hover);
   transition: 0.3s;
   cursor: url("assets/cursor.cur"), auto;
+  border: 5px solid #ffffff;
 }
 
 /*LANDING PAGE */
 
 #rj-link {
   font-size: var(--h2-size);
+  padding: 5px;
 }
 
 #cockpit {
   width: 60vw;
 }
 
-.star {
-  width: 50px;
+.space-icon {
+  max-height: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 
+.space-icon:hover {
+  transform: scale(1.1);
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: rgba(0, 60, 0, 0.8);
+  color: var(--header-color);
+  padding: 5px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 5;
+}
+
+.grid-cell:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.grid-cell > a {
+  border: none;
+}
 /* RESEARCH JOURNAL */
 .rj-left {
   background-color: var(--rj-left-bg);
@@ -74,6 +108,13 @@ a:hover {
 
 .rj-right {
   text-align: right;
+}
+
+/* WORKBOOK PAGES */
+
+.wb h1 {
+  padding: 5px;
+  text-align: center;
 }
 
 /* FOR MOBILE SCREENS */
@@ -87,5 +128,10 @@ a:hover {
 @media (max-width: 600px) {
   #cockpit {
     width: 100vw;
+  }
+
+  /* tooltips are disabled for mobile views*/
+  .grid-cell:hover .tooltip {
+    visibility: hidden;
   }
 }

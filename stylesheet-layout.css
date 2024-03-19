@@ -80,6 +80,23 @@ h6 {
   right: 0;
 }
 
+.grid {
+  display: grid;
+  grid-auto-rows: 12vh;
+  margin: 5vh;
+}
+
+.space-icon {
+  margin: auto;
+}
+
+.tooltip {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  z-index: 1;
+}
+
 /* RESEARCH JOURNAL */
 
 .rj-row {
