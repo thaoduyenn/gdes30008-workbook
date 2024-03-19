@@ -1,17 +1,17 @@
 :root {
-  --body-size: 16px;
-  --h1-size: 2.5em;
-  --h2-size: 1.75em;
-  --header-color: #2dff19;
-  --body-color: rgb(255, 255, 255);
-  --body-hover: #ffffff;
-  cursor: url("assets/cursor.cur"), auto;
+	--body-size: 16px;
+	--h1-size: 2.5em;
+	--h2-size: 1.75em;
+	--header-color: #2dff19;
+	--body-color: rgb(255, 255, 255);
+	--body-hover: #ffffff;
+	cursor: url("assets/cursor.cur"), auto;
 }
 
 body {
-  background-color: #000000;
-  background-image: url(assets/bg.jpg);
-  font-family: "Martian Mono", "Courier", monospace;
+	background-color: #000000;
+	background-image: url(assets/bg.jpg);
+	font-family: "Martian Mono", "Courier", monospace;
 }
 
 body,
@@ -19,154 +19,154 @@ p,
 span,
 a,
 li {
-  font-size: var(--body-size);
+	font-size: var(--body-size);
 }
 li {
-  color: var(--body-color);
+	color: var(--body-color);
 }
 
 p {
-  color: var(--body-color);
-  margin: 10px 0;
+	color: var(--body-color);
+	margin: 10px 0;
 }
 h1 {
-  font-size: var(--h1-size);
-  color: var(--header-color);
-  margin: 10px;
+	font-size: var(--h1-size);
+	color: var(--header-color);
+	margin: 10px;
 }
 
 h2 {
-  font-size: var(--h2-size);
-  color: var(--header-color);
-  margin: 5px 0;
+	font-size: var(--h2-size);
+	color: var(--header-color);
+	margin: 5px 0;
 }
 
 .no-list-style {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 img {
-  max-height: 600px;
+	max-height: 600px;
 }
 
 .nav-button {
-  color: var(--header-color);
-  text-decoration: none;
-  border: 3px solid #2dff19;
-  border-radius: 2px;
-  padding: 5px;
-  transition: 0.3s;
+	color: var(--header-color);
+	text-decoration: none;
+	border: 3px solid #2dff19;
+	border-radius: 2px;
+	padding: 5px;
+	transition: 0.3s;
 }
 
 .nav-button:hover {
-  color: var(--body-hover);
-  border: 3px solid #ffffff;
+	color: var(--body-hover);
+	border: 3px solid #ffffff;
 }
 
 a:hover {
-  cursor: url("assets/cursor.cur"), auto;
+	cursor: url("assets/cursor.cur"), auto;
 }
 
 /*LANDING PAGE */
 
 #rj-link {
-  font-size: var(--h2-size);
-  border: 5px solid #2dff19;
-  margin: 10px;
+	font-size: var(--h2-size);
+	border: 5px solid #2dff19;
+	margin: 10px;
 }
 
 #rj-link:hover {
-  border: 5px solid #ffffff;
+	border: 5px solid #ffffff;
 }
 
 #cockpit {
-  width: 60vw;
+	width: 60vw;
 }
 
 .space-icon {
-  max-height: 100%;
-  transition: transform 0.3s ease-in-out;
+	max-height: 100%;
+	transition: transform 0.3s ease-in-out;
 }
 
 .space-icon:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .tooltip {
-  visibility: hidden;
-  background-color: rgba(0, 60, 0, 0.8);
-  color: var(--header-color);
-  padding: 5px;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 0.5s;
-  z-index: 5;
+	visibility: hidden;
+	background-color: rgba(0, 60, 0, 0.8);
+	color: var(--header-color);
+	padding: 5px;
+	border-radius: 2px;
+	opacity: 0;
+	transition: opacity 0.5s;
+	z-index: 5;
 }
 
 .grid-cell:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 .grid-cell > a {
-  border: none;
+	border: none;
 }
 
 .glow {
-  text-shadow: 0 0 1px #2dff19, 0 0 2px #2dff19;
-  animation: glow 1.5s ease-in-out infinite alternate;
+	text-shadow: 0 0 1px #2dff19, 0 0 2px #2dff19;
+	animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-  from {
-    text-shadow: 0 0 1px #2dff19, 0 0 2px #2dff19;
-  }
-  to {
-    text-shadow: 0 0 3px #2dff19, 0 0 5px #2dff19;
-  }
+	from {
+		text-shadow: 0 0 1px #2dff19, 0 0 2px #2dff19;
+	}
+	to {
+		text-shadow: 0 0 3px #2dff19, 0 0 5px #2dff19;
+	}
 }
 
 /* WORKBOOK PAGES */
 
 .wb {
-  margin: auto;
-  width: 90vw;
+	margin: auto;
+	width: 90vw;
 }
 
 .wb > h1 {
-  text-align: center;
+	text-align: center;
 }
 
 .right {
-  text-align: right;
+	text-align: right;
 }
 
 /*Border for screenshots of the website*/
 .screenshot {
-  border: 1px solid #2dff19;
+	border: 1px solid #2dff19;
 }
 
 /* FOR MOBILE SCREENS */
 
 @media (max-width: 860px) {
-  h1 {
-    font-size: var(--h2-size);
-    margin: 10px;
-  }
+	h1 {
+		font-size: var(--h2-size);
+		margin: 7.5px;
+	}
 
-  #rj-link {
-    padding: 2px;
-    margin: 5px 10px;
-  }
+	#rj-link {
+		padding: 2px;
+		margin: 2px 10px;
+	}
 }
 
 @media (max-width: 600px) {
-  #cockpit {
-    width: 100vw;
-  }
+	#cockpit {
+		width: 100vw;
+	}
 
-  /* tooltips are disabled for mobile views*/
-  .grid-cell:hover .tooltip {
-    visibility: hidden;
-  }
+	/* tooltips are disabled for mobile views*/
+	.grid-cell:hover .tooltip {
+		visibility: hidden;
+	}
 }
