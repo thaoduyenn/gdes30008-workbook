@@ -85,6 +85,7 @@ a:hover {
 
 .space-icon {
 	max-height: 100%;
+	vertical-align: middle;
 	transition: transform 0.3s ease-in-out;
 }
 
@@ -163,6 +164,10 @@ a:hover {
 @media (max-width: 600px) {
 	#cockpit {
 		width: 100vw;
+	}
+
+	.space-icon {
+		max-height: 80%;
 	}
 
 	/* tooltips are disabled for mobile views*/

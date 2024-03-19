@@ -2,21 +2,21 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 * {
-  margin: 0;
+	margin: 0;
 }
 
 html,
 body {
-  height: 100%;
+	height: 100%;
 }
 
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
 }
 
 img,
@@ -24,15 +24,15 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 p,
@@ -42,93 +42,97 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 /* CODE START */
 
 .flex-row {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .flex-col {
-  flex: 50%;
-  width: 50%;
+	flex: 50%;
+	width: 50%;
 }
 
 /* MAIN PAGE */
 #wb-header-left {
-  flex: 70%;
-  width: 70%;
+	flex: 70%;
+	width: 70%;
 }
 
 #wb-header-right {
-  flex: 30%;
-  width: 30%;
+	flex: 30%;
+	width: 30%;
 }
 
 #cockpit {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 #rj-link {
-  position: absolute;
-  right: 0;
+	position: absolute;
+	right: 0;
 }
 
 .grid {
-  display: grid;
-  grid-auto-rows: 12vh;
-  margin: 5vh;
+	display: grid;
+	grid-auto-rows: 12vh;
+	margin: 5vh;
 }
 
 .space-icon {
-  margin: auto;
+	margin: auto;
 }
 
 .tooltip {
-  width: fit-content;
-  margin: auto;
-  text-align: center;
-  z-index: 1;
+	width: fit-content;
+	margin: auto;
+	text-align: center;
+	z-index: 1;
 }
 
 .nav-button {
-  margin: 15px auto;
-  display: block;
-  width: fit-content;
+	margin: 15px auto;
+	display: block;
+	width: fit-content;
 }
 
 /* WORKBOOK PAGES */
 
 .wb .flex-col {
-  padding: 20px;
+	padding: 20px;
 }
 
 .wb img {
-  padding: 5px 0;
+	padding: 5px 0;
 }
 
 .right img {
-  display: inline;
+	display: inline;
 }
 
 /* FOR MOBILE SCREENS */
 
 @media (max-width: 768px) {
-  .flex-col,
-  #wb-header-left,
-  #wb-header-right {
-    flex: 100%;
-    width: 100%;
-  }
+	.flex-col,
+	#wb-header-left,
+	#wb-header-right {
+		flex: 100%;
+		width: 100%;
+	}
 
-  .rj-left,
-  .rj-right {
-    width: 100%;
-  }
+	.grid {
+		margin: 7.5vh 5vh 5vh;
+	}
+
+	.rj-left,
+	.rj-right {
+		width: 100%;
+	}
 }
