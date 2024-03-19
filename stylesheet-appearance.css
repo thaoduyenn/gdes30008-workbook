@@ -2,8 +2,6 @@
   --body-size: 16px;
   --h1-size: 2.5em;
   --h2-size: 1.75em;
-  --rj-left-bg: #ffffff;
-  --rj-left-text-color: #000000;
   --header-color: #2dff19;
   --body-color: rgb(255, 255, 255);
   --body-hover: #ffffff;
@@ -23,21 +21,24 @@ a,
 li {
   font-size: var(--body-size);
 }
+li {
+  color: var(--body-color);
+}
 
 p {
   color: var(--body-color);
-  padding: 5px;
+  margin: 10px 0;
 }
 h1 {
   font-size: var(--h1-size);
   color: var(--header-color);
-  padding: 5px;
+  margin: 10px;
 }
 
 h2 {
   font-size: var(--h2-size);
   color: var(--header-color);
-  padding: 5px;
+  margin: 5px 0;
 }
 
 .no-list-style {
@@ -48,24 +49,34 @@ img {
   max-height: 600px;
 }
 
-a {
+.nav-button {
   color: var(--header-color);
   text-decoration: none;
-  border: 5px solid #2dff19;
+  border: 3px solid #2dff19;
+  border-radius: 2px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  color: var(--body-hover);
+  border: 3px solid #ffffff;
 }
 
 a:hover {
-  color: var(--body-hover);
-  transition: 0.3s;
   cursor: url("assets/cursor.cur"), auto;
-  border: 5px solid #ffffff;
 }
 
 /*LANDING PAGE */
 
 #rj-link {
   font-size: var(--h2-size);
-  padding: 5px;
+  border: 5px solid #2dff19;
+  margin: 10px;
+}
+
+#rj-link:hover {
+  border: 5px solid #ffffff;
 }
 
 #cockpit {
@@ -100,21 +111,39 @@ a:hover {
 .grid-cell > a {
   border: none;
 }
-/* RESEARCH JOURNAL */
-.rj-left {
-  background-color: var(--rj-left-bg);
-  color: var(--rj-left-text-color);
+
+.glow {
+  text-shadow: 0 0 1px #2dff19, 0 0 2px #2dff19;
+  animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-.rj-right {
-  text-align: right;
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #2dff19, 0 0 2px #2dff19;
+  }
+  to {
+    text-shadow: 0 0 3px #2dff19, 0 0 5px #2dff19;
+  }
 }
 
 /* WORKBOOK PAGES */
 
-.wb h1 {
-  padding: 5px;
+.wb {
+  margin: auto;
+  width: 90vw;
+}
+
+.wb > h1 {
   text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/*Border for screenshots of the website*/
+.screenshot {
+  border: 1px solid #2dff19;
 }
 
 /* FOR MOBILE SCREENS */
@@ -122,6 +151,12 @@ a:hover {
 @media (max-width: 860px) {
   h1 {
     font-size: var(--h2-size);
+    margin: 10px;
+  }
+
+  #rj-link {
+    padding: 2px;
+    margin: 5px 10px;
   }
 }
 

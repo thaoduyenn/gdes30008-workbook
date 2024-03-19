@@ -97,16 +97,24 @@ h6 {
   z-index: 1;
 }
 
-/* RESEARCH JOURNAL */
-
-.rj-row {
-  display: flex;
-  flex-wrap: wrap;
+.nav-button {
+  margin: 15px auto;
+  display: block;
+  width: fit-content;
 }
 
-.rj-left,
-.rj-right {
-  width: 50%;
+/* WORKBOOK PAGES */
+
+.wb .flex-col {
+  padding: 20px;
+}
+
+.wb img {
+  padding: 5px 0;
+}
+
+.right img {
+  display: inline;
 }
 
 /* FOR MOBILE SCREENS */
