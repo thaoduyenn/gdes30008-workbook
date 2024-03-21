@@ -14,6 +14,10 @@ body {
 	font-family: "Martian Mono", "Courier", monospace;
 }
 
+audio {
+	visibility: hidden;
+}
+
 body,
 p,
 span,
