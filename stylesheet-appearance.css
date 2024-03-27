@@ -53,17 +53,24 @@ img {
 	max-height: 600px;
 }
 
-.nav-button {
+a,
+a:visited {
 	color: var(--header-color);
+	transition: 0.3s;
+}
+
+a:hover {
+	color: var(--body-hover);
+}
+
+.nav-button {
 	text-decoration: none;
 	border: 3px solid #2dff19;
 	border-radius: 2px;
 	padding: 5px;
-	transition: 0.3s;
 }
 
 .nav-button:hover {
-	color: var(--body-hover);
 	border: 3px solid #ffffff;
 }
 
