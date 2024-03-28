@@ -1,3 +1,5 @@
+//The following code was created with the help of ChatGPT.
+
 // Play a laser sound when a target is clicked.
 
 document.addEventListener("DOMContentLoaded", function () {
