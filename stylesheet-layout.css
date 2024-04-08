@@ -116,11 +116,19 @@ h6 {
 }
 
 .wb img {
-	padding: 5px 0;
+	padding: 7px 0;
 }
 
 .right img {
 	display: inline;
+}
+
+canvas {
+	position: fixed;
+	margin: 0;
+	left: 0;
+	top: 0;
+	z-index: -5;
 }
 
 /* FOR MOBILE SCREENS */
