@@ -111,29 +111,38 @@ h6 {
 
 /* WORKBOOK PAGES */
 
+.wb {
+	text-align: center;
+	max-width: 75%;
+}
+
 .wb .flex-col {
 	padding: 20px;
 }
 
 .wb img {
-	padding: 7px 0;
+	margin: 20px auto;
+}
+
+.wb p {
+	margin: 20px 0;
 }
 
 .right img {
 	display: inline;
 }
 
-canvas {
-	position: fixed;
-	margin: 0;
-	left: 0;
-	top: 0;
-	z-index: -5;
+.p5 {
+	display: inline;
 }
 
 /* FOR MOBILE SCREENS */
 
 @media (max-width: 768px) {
+	.wb {
+		max-width: 100%;
+	}
+
 	.flex-col,
 	#wb-header-left,
 	#wb-header-right {
