@@ -1,7 +1,8 @@
 let star, planet;
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	var canvas = createCanvas(windowWidth, windowHeight);
+	canvas.parent("canvas-div");
 	world.gravity.y = 0;
 
 	// set up star
@@ -36,4 +37,8 @@ function draw() {
 	}
 
 	planet.attractTo(star, 10);
+}
+
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
 }

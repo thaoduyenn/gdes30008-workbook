@@ -100,11 +100,10 @@ h6 {
 	width: fit-content;
 	margin: auto;
 	text-align: center;
-	z-index: 1;
 }
 
 .nav-button {
-	margin: 15px auto;
+	margin: 2em auto;
 	display: block;
 	width: fit-content;
 }
@@ -121,19 +120,25 @@ h6 {
 }
 
 .wb img {
-	margin: 20px auto;
+	margin: 1.5em auto;
 }
 
+.wb h1,
 .wb p {
-	margin: 20px 0;
+	margin: 1em;
 }
 
-.right img {
+.wb h2 {
+	margin: 1.5em;
+}
+
+.right img,
+.inline {
 	display: inline;
 }
 
-.p5 {
-	display: inline;
+.p5 canvas {
+	margin: auto;
 }
 
 /* FOR MOBILE SCREENS */

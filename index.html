@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="/../stylesheet-layout.css" />
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1/lib/addons/p5.sound.min.js"></script>
+  <script src="https://p5play.org/v3/planck.min.js"></script>
+  <script src="https://p5play.org/v3/p5play.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet" />
@@ -21,10 +27,11 @@
   <!--HEADER-->
   <div class="flex-row">
     <div class="flex-col" id="wb-header-left">
-      <h1 class="glow">GDES30008_WORKBOOK</h1>
+      <h1 class="glow">SELECT LOCATION:</h1>
+
     </div>
     <div class="flex-col" id="wb-header-right">
-      <a href="researchjournal.html" class="nav-button" id="rj-link"> RESEARCH JOURNAL</a>
+      <a href="researchjournal.html" class="nav-button" id="rj-link"> RESEARCH LOG</a>
     </div>
   </div>
   <br />
@@ -90,12 +97,14 @@
       <div class="tooltip">data visualisation</div>
     </div>
     <div class="grid-cell">
-      <img class="space-icon" src="assets/planet2.png" />
+      <a href="wb-pages/wb-11.html" class="wb-link"><img class="space-icon" src="assets/planet2.png" /></a>
       <div class="tooltip">workbook development</div>
     </div>
   </div>
   </div>
   <img id="cockpit" src="assets/cockpit.png" />
+  <div style="position: absolute; top: 0; left: 0; z-index: -5" id="home-canvas"></div>
+  <script src="homepagep5.js"></script>
 </body>
 
 </html>

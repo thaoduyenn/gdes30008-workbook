@@ -79,7 +79,6 @@ a:hover {
 }
 
 /*LANDING PAGE */
-
 #rj-link {
 	font-size: var(--h2-size);
 	border: 5px solid #2dff19;
@@ -183,6 +182,11 @@ a:hover {
 
 	/* tooltips are disabled for mobile views*/
 	.grid-cell:hover .tooltip {
+		visibility: hidden;
+	}
+
+	/* no p5.js on mobile */
+	#home-canvas {
 		visibility: hidden;
 	}
 }

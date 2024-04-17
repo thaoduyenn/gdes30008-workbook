@@ -26,42 +26,38 @@
 <body>
 	<div class="wb">
 		<h1 class="glow">image and sound</h1>
-		<div class="flex-row">
-			<div class="flex-col">
-				<h2>image effects with p5.js</h2>
-				<p>I wanted to go beyond the basic image and webcam recording demonstrated in this week's workshop, and
-					found
-					the p5.glitch library online. The library allows for glitch effects to be added to images and video,
-					and I
-					wanted to explore its functionality.</p>
 
-				<p> I started off with an image, taken from <a href="https://stickyfrogs.tumblr.com/" target="_blank">
-						stickyfrogs.tumblr.com.</a></p>
-				<img alt="Image of frogs on a branch." src="wb-images/wb-09-01.jpg">
-				<p>The glitch effect below was created by replacing and randomising byte values in the image. While it
-					makes
-					for a more interesting page, I would not use this effect further in my workbook without having a way
-					to
-					disable the glitch effects, as looking at them for an extended period of time can cause discomfort.
-				</p>
-				<div class="canvas-div" id="canvas-div"></div>
-			</div>
-			<div class="flex-col right">
-				<h2>p5.sound</h2>
-				<p>Another functionality I was interested in is the ability to visualise sound using p5.sound. I
-					used the fast Fourier transform (FTT) functionality, which returns the frequencies and amplitudes of
-					an audio input. By drawing a shape based on the output, we can visualise the frequency and amplitude
-					of audio inputed through the user's microphone.</p>
-				<a rel="_blank" href="wb-sketches/soundtest.html">A link to the sketch.</a>
+		<h2>image effects with p5.js</h2>
+		<p>I wanted to go beyond the basic image and webcam recording demonstrated in this week's workshop, and
+			found
+			the p5.glitch library online. The library allows for glitch effects to be added to images and video,
+			and I
+			wanted to explore its functionality.</p>
 
-				<p>Below is a demonstration of the audio visualisation functionality. I am planning to incorporate this
-					into my workbook, since the results have a futuristic feel.</p>
-				<img class="screenshot" alt="Image of waveforms." src="wb-images/wb-09-02.jpg">
-			</div>
-		</div>
+		<p> I started off with an image, taken from <a href="https://stickyfrogs.tumblr.com/" target="_blank">
+				stickyfrogs.tumblr.com.</a></p>
+		<img alt="Image of frogs on a branch." src="wb-images/wb-09-01.jpg">
+		<div class="p5" id="canvas-div"></div>
+		<p>The glitch effect below was created by replacing and randomising byte values in the image. While it
+			makes
+			for a more interesting page, I would not use this effect further in my workbook without having a way
+			to
+			disable the glitch effects, as looking at them for an extended period of time can cause discomfort.
+		</p>
+
+		<h2>p5.sound</h2>
+		<p>Another functionality I was interested in is the ability to visualise sound using p5.sound. I
+			used the fast Fourier transform (FTT) functionality, which returns the frequencies and amplitudes of
+			an audio input. By drawing a shape based on the output, we can visualise the frequency and amplitude
+			of audio inputed through the user's microphone.</p>
+		<a rel="_blank" href="wb-sketches/soundtest.html">A link to the sketch.</a>
+
+		<p>Below is a demonstration of the audio visualisation functionality. I may incorporate this
+			into my workbook, since the results have a futuristic feel.</p>
+		<img class="screenshot" alt="Image of waveforms." src="wb-images/wb-09-02.jpg">
+
 		<a href="/../../index.html" class="nav-button">BACK</a>
 	</div>
-
 	<script src="wb-sketches/glitchy.js"></script>
 </body>
 
