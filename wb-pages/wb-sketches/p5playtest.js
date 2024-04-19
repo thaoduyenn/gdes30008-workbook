@@ -6,7 +6,7 @@ function setup() {
 	world.gravity.y = 0;
 
 	// set up star
-	star = new Sprite(Canvas.w, Canvas.h);
+	star = new Sprite(canvas.w, canvas.h);
 	star.diameter = 100;
 	star.color = "#ffd117";
 	star.strokeweight = 0;
@@ -28,7 +28,7 @@ function draw() {
 	text(
 		"Click anywhere to create new celestial body",
 		canvas.w / 2,
-		canvas.h * 0.4
+		canvas.h * 0.6
 	);
 
 	// make planet
