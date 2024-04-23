@@ -115,11 +115,13 @@ h6 {
 	max-width: 75%;
 }
 
-.wb .flex-col {
+.wb .flex-col,
+.rj .flex-col {
 	padding: 20px;
 }
 
-.wb img {
+.wb img,
+.rj img {
 	margin: 1.5em auto;
 }
 
@@ -132,13 +134,27 @@ h6 {
 	margin: 1.5em;
 }
 
-.right img,
+.right {
+	text-align: right;
+}
+
 .inline {
 	display: inline;
 }
 
 .p5 canvas {
 	margin: auto;
+}
+
+/* RESEARCH JOURNAL*/
+
+.rj {
+	text-align: left;
+}
+
+.rj p,
+.rj h2 {
+	margin: 1.5em 0;
 }
 
 /* FOR MOBILE SCREENS */
