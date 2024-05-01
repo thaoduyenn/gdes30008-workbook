@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>GDES30008_WORKBOOK</title>
+	<link rel="stylesheet" href="/../stylesheet-appearance.css" />
+	<link rel="stylesheet" href="/../stylesheet-layout.css" />
+	<link rel="icon" type="image/x-icon" href="/../assets/favicon.ico" />
+
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet" />
+
+	<script src="/../scripts.js"></script>
+
+</head>
+
+
+<body>
+	<div class="wb">
+		<h1 class="glow">blink buzz vroom</h1>
+
+		<h2>blink!</h2>
+
+		<p>I started off with a simple LED light circuit and a program that causes it to blink at specified intervals.
+			Though the circuitry was simple to set up, one thing I had to keep in mind was the breadboard's layout and
+			the importance of grounding, due to the power source I used being my laptop. Improper circuitry could lead
+			to the damage of components on the breadboard, or of the Arduino control board itself. I modified the
+			circuitry and the Arduino code slightly so that the blinking would alternate between two different LEDs.</p>
+		<img title="Arduino board with two LEDs with one turned on." src="wb-images/wb-13-01.jpg">
+
+		<h2>touch!</h2>
+
+		<p>I experimented with the photosensitivity sensor in a circuit, adding a motor so it would spin slightly to
+			indicate the sensor's activation. I will need to explore how the sensor works further, as it took a few
+			attempts of blocking the sensor's light source with my finger for it to work.</p>
+		<img title="Arduino board with motor." src="wb-images/wb-13-02.gif">
+
+		<p>The most complex circuit I created was one that would display a custom scrolling animation on an 8x8 LED
+			grid. I used a tool that converted a bitmap sprite to a series of hex codes, which the Arduino would
+			interpret as
+			binary (meaning a LED in a certain position woukd either be off or on). Due to insufficient power, the LED
+			grid only functioned partially, but it displayed the intended scrolling animation.</p>
+		<img title="Arduino board with 8x8 LED grid." src="wb-images/wb-13-03.gif">
+
+
+	</div>
+
+
+	<a href="/../../index.html" class="nav-button">BACK</a>
+	</div>
+</body>
+
+</html>
