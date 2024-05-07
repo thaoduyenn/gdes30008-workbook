@@ -115,9 +115,11 @@ h6 {
 	max-width: 75%;
 }
 
-.wb .flex-col,
-.rj .flex-col {
+.wb .flex-col {
 	padding: 20px;
+}
+.rj .flex-col {
+	padding: 30px;
 }
 
 .wb img,
@@ -152,9 +154,26 @@ h6 {
 	text-align: left;
 }
 
+.rj h1 {
+	padding: 20px 30px;
+}
+
 .rj p,
 .rj h2 {
 	margin: 1.5em 0;
+}
+
+/* PRINTING STYLES */
+
+@media print {
+	@page {
+		size: A4 landscape;
+		margin: 0;
+	}
+
+	.flex-row {
+		page-break-before: always;
+	}
 }
 
 /* FOR MOBILE SCREENS */

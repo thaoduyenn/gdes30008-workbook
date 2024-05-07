@@ -156,6 +156,27 @@ a:hover {
 	border: 1px solid #2dff19;
 }
 
+/* PRINTING STYLES */
+
+.printonly {
+	display: none;
+}
+
+@media print {
+	p,
+	a {
+		font-size: 14px;
+	}
+
+	.nav-button {
+		display: none;
+	}
+
+	.printonly {
+		display: block;
+	}
+}
+
 /* FOR MOBILE SCREENS */
 
 @media (max-width: 860px) {
@@ -177,11 +198,11 @@ a:hover {
 
 	/* tooltips are disabled for mobile views*/
 	.grid-cell:hover .tooltip {
-		visibility: hidden;
+		display: none;
 	}
 
 	/* no p5.js on mobile */
 	#home-canvas {
-		visibility: hidden;
+		display: none;
 	}
 }
