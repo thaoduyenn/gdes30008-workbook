@@ -88,7 +88,7 @@ h6 {
 
 .grid-cell a {
 	display: block;
-	width: 12vh;
+	max-width: 12vh;
 	margin: auto;
 }
 
@@ -172,7 +172,14 @@ h6 {
 	}
 
 	.grid {
-		margin: 7.5vh 5vw 5vh;
+		margin: 7vh 2.5vw 2.5vh;
+
+		grid-auto-rows: 12.5vh;
+	}
+
+	.grid-cell a {
+		display: block;
+		max-width: 8vh;
 	}
 
 	.rj-left,
