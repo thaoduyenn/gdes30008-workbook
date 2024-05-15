@@ -104,7 +104,7 @@ h6 {
 
 .nav-button {
 	margin: 1.75em auto;
-	display: block;
+	display: inline-block;
 	width: fit-content;
 }
 
