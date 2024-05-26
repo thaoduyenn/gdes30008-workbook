@@ -10,7 +10,9 @@
 	<link rel="stylesheet" href="/../../stylesheet-layout.css" />
 	<link rel="icon" type="image/x-icon" href="/../../assets/favicon.ico" />
 
-	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1/lib/addons/p5.sound.min.js"></script>
+
 	<script src="artprogram.js"></script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,9 +24,11 @@
 
 
 <body style="overflow:hidden">
+
 	<div class="wb">
 		<a href="javascript:window.history.back();" class="nav-button"
 			style="color: black; border: 3px solid black;">BACK</a>
+		<div style="position: absolute; top: 0; left: 0; z-index: -5" id="canvas-div"></div>
 	</div>
 
 </body>

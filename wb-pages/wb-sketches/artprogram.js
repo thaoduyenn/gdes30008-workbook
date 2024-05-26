@@ -2,7 +2,8 @@ var brushSize = 1;
 var brushCol = "#000000";
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	var canvas = createCanvas(windowWidth, windowHeight);
+	canvas.parent("canvas-div");
 	background(255, 255, 255);
 	frameRate(60);
 }
